@@ -1,0 +1,126 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Golpinar_Sitesi_Model.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Aidatlar">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ev" Type="int" Nullable="false" />
+    <Property Name="odenmemis_aidat" Type="money" />
+    <Property Name="odeme_tarihi" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Evler">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="numara" Type="tinyint" Nullable="false" />
+    <Property Name="sahibi" Type="int" Nullable="false" />
+    <Property Name="kiracı" Type="int" />
+  </EntityType>
+  <EntityType Name="Harcama_Detay">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="harcama_id" Type="int" Nullable="false" />
+    <Property Name="aciklama" Type="nvarchar" MaxLength="250" Nullable="false" />
+    <Property Name="harcama" Type="money" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Harcamalar">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="tarih" Type="datetime" Nullable="false" />
+    <Property Name="toplam_harcama" Type="money" />
+  </EntityType>
+  <EntityType Name="Kullanicilar">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="kullanici_adi" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="sifre" Type="nvarchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Site_Sakinleri">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ad_soyad" Type="nvarchar" MaxLength="250" Nullable="false" />
+    <Property Name="telefon" Type="char" MaxLength="10" Nullable="false" />
+  </EntityType>
+  <Association Name="FK_Aidatlar_Evler">
+    <End Role="Evler" Type="Self.Evler" Multiplicity="1" />
+    <End Role="Aidatlar" Type="Self.Aidatlar" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Evler">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Aidatlar">
+        <PropertyRef Name="ev" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Evler_Site_Sakinleri">
+    <End Role="Site_Sakinleri" Type="Self.Site_Sakinleri" Multiplicity="1" />
+    <End Role="Evler" Type="Self.Evler" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Site_Sakinleri">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Evler">
+        <PropertyRef Name="sahibi" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Evler_Site_Sakinleri1">
+    <End Role="Site_Sakinleri" Type="Self.Site_Sakinleri" Multiplicity="0..1" />
+    <End Role="Evler" Type="Self.Evler" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Site_Sakinleri">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Evler">
+        <PropertyRef Name="kiracı" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Harcama_Detay_Harcamalar">
+    <End Role="Harcamalar" Type="Self.Harcamalar" Multiplicity="1" />
+    <End Role="Harcama_Detay" Type="Self.Harcama_Detay" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Harcamalar">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Harcama_Detay">
+        <PropertyRef Name="harcama_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="Golpinar_Sitesi_ModelStoreContainer">
+    <EntitySet Name="Aidatlar" EntityType="Self.Aidatlar" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Evler" EntityType="Self.Evler" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Harcama_Detay" EntityType="Self.Harcama_Detay" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Harcamalar" EntityType="Self.Harcamalar" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Kullanicilar" EntityType="Self.Kullanicilar" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Site_Sakinleri" EntityType="Self.Site_Sakinleri" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_Aidatlar_Evler" Association="Self.FK_Aidatlar_Evler">
+      <End Role="Evler" EntitySet="Evler" />
+      <End Role="Aidatlar" EntitySet="Aidatlar" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Evler_Site_Sakinleri" Association="Self.FK_Evler_Site_Sakinleri">
+      <End Role="Site_Sakinleri" EntitySet="Site_Sakinleri" />
+      <End Role="Evler" EntitySet="Evler" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Evler_Site_Sakinleri1" Association="Self.FK_Evler_Site_Sakinleri1">
+      <End Role="Site_Sakinleri" EntitySet="Site_Sakinleri" />
+      <End Role="Evler" EntitySet="Evler" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Harcama_Detay_Harcamalar" Association="Self.FK_Harcama_Detay_Harcamalar">
+      <End Role="Harcamalar" EntitySet="Harcamalar" />
+      <End Role="Harcama_Detay" EntitySet="Harcama_Detay" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

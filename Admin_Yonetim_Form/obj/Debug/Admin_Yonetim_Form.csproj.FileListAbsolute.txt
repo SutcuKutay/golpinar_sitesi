@@ -1,0 +1,16 @@
+C:\Users\sapli\Documents\Dersler\AriBilgi\Golpinar_Sitesi\Admin_Yonetim_Form\bin\Debug\Admin_Yonetim_Form.exe.config
+C:\Users\sapli\Documents\Dersler\AriBilgi\Golpinar_Sitesi\Admin_Yonetim_Form\bin\Debug\Admin_Yonetim_Form.exe
+C:\Users\sapli\Documents\Dersler\AriBilgi\Golpinar_Sitesi\Admin_Yonetim_Form\bin\Debug\Admin_Yonetim_Form.pdb
+C:\Users\sapli\Documents\Dersler\AriBilgi\Golpinar_Sitesi\Admin_Yonetim_Form\bin\Debug\EntityFramework.dll
+C:\Users\sapli\Documents\Dersler\AriBilgi\Golpinar_Sitesi\Admin_Yonetim_Form\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\sapli\Documents\Dersler\AriBilgi\Golpinar_Sitesi\Admin_Yonetim_Form\bin\Debug\EntityFramework.xml
+C:\Users\sapli\Documents\Dersler\AriBilgi\Golpinar_Sitesi\Admin_Yonetim_Form\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\sapli\Documents\Dersler\AriBilgi\Golpinar_Sitesi\Admin_Yonetim_Form\obj\Debug\Admin_Yonetim_Form.csproj.AssemblyReference.cache
+C:\Users\sapli\Documents\Dersler\AriBilgi\Golpinar_Sitesi\Admin_Yonetim_Form\obj\Debug\Admin_Yonetim_Form.Baslangic_Ekrani.resources
+C:\Users\sapli\Documents\Dersler\AriBilgi\Golpinar_Sitesi\Admin_Yonetim_Form\obj\Debug\Admin_Yonetim_Form.Properties.Resources.resources
+C:\Users\sapli\Documents\Dersler\AriBilgi\Golpinar_Sitesi\Admin_Yonetim_Form\obj\Debug\Admin_Yonetim_Form.csproj.GenerateResource.cache
+C:\Users\sapli\Documents\Dersler\AriBilgi\Golpinar_Sitesi\Admin_Yonetim_Form\obj\Debug\Admin_Yonetim_Form.csproj.CoreCompileInputs.cache
+C:\Users\sapli\Documents\Dersler\AriBilgi\Golpinar_Sitesi\Admin_Yonetim_Form\obj\Debug\Admin_Yo.E56E9058.Up2Date
+C:\Users\sapli\Documents\Dersler\AriBilgi\Golpinar_Sitesi\Admin_Yonetim_Form\obj\Debug\Admin_Yonetim_Form.exe
+C:\Users\sapli\Documents\Dersler\AriBilgi\Golpinar_Sitesi\Admin_Yonetim_Form\obj\Debug\Admin_Yonetim_Form.pdb
+C:\Users\sapli\Documents\Dersler\AriBilgi\Golpinar_Sitesi\Admin_Yonetim_Form\obj\Debug\Admin_Yonetim_Form.Ana_Ekran.resources

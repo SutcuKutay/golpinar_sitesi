@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="Golpinar_Sitesi_ModelStoreContainer" CdmEntityContainer="Golpinar_Sitesi_Entities">
+    <EntitySetMapping Name="Evlers">
+      <EntityTypeMapping TypeName="Golpinar_Sitesi_Model.Evler">
+        <MappingFragment StoreEntitySet="Evler">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="numara" ColumnName="numara" />
+          <ScalarProperty Name="sahibi" ColumnName="sahibi" />
+          <ScalarProperty Name="kiracı" ColumnName="kiracı" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Kullanicilars">
+      <EntityTypeMapping TypeName="Golpinar_Sitesi_Model.Kullanicilar">
+        <MappingFragment StoreEntitySet="Kullanicilar">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="kullanici_adi" ColumnName="kullanici_adi" />
+          <ScalarProperty Name="sifre" ColumnName="sifre" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Site_Sakinleri">
+      <EntityTypeMapping TypeName="Golpinar_Sitesi_Model.Site_Sakinleri">
+        <MappingFragment StoreEntitySet="Site_Sakinleri">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="ad_soyad" ColumnName="ad_soyad" />
+          <ScalarProperty Name="telefon" ColumnName="telefon" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Aidatlars">
+      <EntityTypeMapping TypeName="Golpinar_Sitesi_Model.Aidatlar">
+        <MappingFragment StoreEntitySet="Aidatlar">
+          <ScalarProperty Name="odeme_tarihi" ColumnName="odeme_tarihi" />
+          <ScalarProperty Name="odenmemis_aidat" ColumnName="odenmemis_aidat" />
+          <ScalarProperty Name="ev" ColumnName="ev" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Harcama_Detay">
+      <EntityTypeMapping TypeName="Golpinar_Sitesi_Model.Harcama_Detay">
+        <MappingFragment StoreEntitySet="Harcama_Detay">
+          <ScalarProperty Name="harcama" ColumnName="harcama" />
+          <ScalarProperty Name="aciklama" ColumnName="aciklama" />
+          <ScalarProperty Name="harcama_id" ColumnName="harcama_id" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Harcamalars">
+      <EntityTypeMapping TypeName="Golpinar_Sitesi_Model.Harcamalar">
+        <MappingFragment StoreEntitySet="Harcamalar">
+          <ScalarProperty Name="toplam_harcama" ColumnName="toplam_harcama" />
+          <ScalarProperty Name="tarih" ColumnName="tarih" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
