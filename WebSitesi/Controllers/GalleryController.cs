@@ -1,10 +1,8 @@
-using Microsoft.AspNetCore.Mvc;
-using System.Diagnostics;
-using WebSitesi.Models;
+﻿using Microsoft.AspNetCore.Mvc;
 
 namespace WebSitesi.Controllers
 {
-    public class HomeController : Controller
+    public class GalleryController : Controller
     {
         public IActionResult Index()
         {

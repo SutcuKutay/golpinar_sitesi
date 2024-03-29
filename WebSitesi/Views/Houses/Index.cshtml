@@ -1,0 +1,25 @@
+﻿@model List<House>
+
+<div class="container">
+    <h1 class="text-center">Ev Listesi</h1>
+    <br />
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">Ev Numarası</th>
+                <th scope="col">Açıklama</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (House house in Model)
+            {
+                <tr>
+                    <th scope="row">@house.HouseId.ToString()</th>
+                    <td>@house.No</td>
+                    <td>@house.Description</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

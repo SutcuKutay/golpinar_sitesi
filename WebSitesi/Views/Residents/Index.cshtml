@@ -1,0 +1,27 @@
+﻿@model List<Resident>
+
+<div class="container">
+    <h1 class="text-center">Site Sakinleri Listesi</h1>
+    <br />
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">Ad Soyad</th>
+                <th scope="col">Oturduğu Ev</th>
+                <th scope="col">Telefon Numarası</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (Resident resident in Model)
+            {
+                <tr>
+                    <th scope="row">@resident.ResidentId.ToString()</th>
+                    <td>@resident.Name</td>
+                    <td>@resident.HouseNumber</td>
+                    <td>@resident.PhoneNumber</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

@@ -18,12 +18,32 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\sapli\Documents\Dersler\AriBilgi\Golpinar_Sitesi\WebSitesi
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/Users/sapli/Documents/Dersler/AriBilgi/Golpinar_Sitesi/WebSitesi/Views/Contact/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29udGFjdFxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/sapli/Documents/Dersler/AriBilgi/Golpinar_Sitesi/WebSitesi/Views/Gallery/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR2FsbGVyeVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/sapli/Documents/Dersler/AriBilgi/Golpinar_Sitesi/WebSitesi/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/sapli/Documents/Dersler/AriBilgi/Golpinar_Sitesi/WebSitesi/Views/Home/Privacy.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+[C:/Users/sapli/Documents/Dersler/AriBilgi/Golpinar_Sitesi/WebSitesi/Views/Houses/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG91c2VzXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/sapli/Documents/Dersler/AriBilgi/Golpinar_Sitesi/WebSitesi/Views/Houses/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG91c2VzXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/sapli/Documents/Dersler/AriBilgi/Golpinar_Sitesi/WebSitesi/Views/Presidents/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJlc2lkZW50c1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/sapli/Documents/Dersler/AriBilgi/Golpinar_Sitesi/WebSitesi/Views/Residents/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVzaWRlbnRzXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/sapli/Documents/Dersler/AriBilgi/Golpinar_Sitesi/WebSitesi/Views/Shared/Error.cshtml]
