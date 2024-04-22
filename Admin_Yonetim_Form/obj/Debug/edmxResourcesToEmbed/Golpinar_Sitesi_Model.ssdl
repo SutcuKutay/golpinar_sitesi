@@ -35,6 +35,14 @@
     <Property Name="tarih" Type="datetime" Nullable="false" />
     <Property Name="toplam_harcama" Type="money" />
   </EntityType>
+  <EntityType Name="Kiracilar">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ad_soyad" Type="nvarchar" MaxLength="250" Nullable="false" />
+    <Property Name="gsm" Type="nchar" MaxLength="11" Nullable="false" />
+  </EntityType>
   <EntityType Name="Kullanicilar">
     <Key>
       <PropertyRef Name="id" />
@@ -63,6 +71,18 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
+  <Association Name="FK_Evler_Kiracilar">
+    <End Role="Kiracilar" Type="Self.Kiracilar" Multiplicity="0..1" />
+    <End Role="Evler" Type="Self.Evler" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Kiracilar">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Evler">
+        <PropertyRef Name="kiracı" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
   <Association Name="FK_Evler_Site_Sakinleri">
     <End Role="Site_Sakinleri" Type="Self.Site_Sakinleri" Multiplicity="1" />
     <End Role="Evler" Type="Self.Evler" Multiplicity="*" />
@@ -72,18 +92,6 @@
       </Principal>
       <Dependent Role="Evler">
         <PropertyRef Name="sahibi" />
-      </Dependent>
-    </ReferentialConstraint>
-  </Association>
-  <Association Name="FK_Evler_Site_Sakinleri1">
-    <End Role="Site_Sakinleri" Type="Self.Site_Sakinleri" Multiplicity="0..1" />
-    <End Role="Evler" Type="Self.Evler" Multiplicity="*" />
-    <ReferentialConstraint>
-      <Principal Role="Site_Sakinleri">
-        <PropertyRef Name="id" />
-      </Principal>
-      <Dependent Role="Evler">
-        <PropertyRef Name="kiracı" />
       </Dependent>
     </ReferentialConstraint>
   </Association>
@@ -104,17 +112,18 @@
     <EntitySet Name="Evler" EntityType="Self.Evler" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Harcama_Detay" EntityType="Self.Harcama_Detay" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Harcamalar" EntityType="Self.Harcamalar" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Kiracilar" EntityType="Self.Kiracilar" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Kullanicilar" EntityType="Self.Kullanicilar" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Site_Sakinleri" EntityType="Self.Site_Sakinleri" Schema="dbo" store:Type="Tables" />
     <AssociationSet Name="FK_Aidatlar_Evler" Association="Self.FK_Aidatlar_Evler">
       <End Role="Evler" EntitySet="Evler" />
       <End Role="Aidatlar" EntitySet="Aidatlar" />
     </AssociationSet>
-    <AssociationSet Name="FK_Evler_Site_Sakinleri" Association="Self.FK_Evler_Site_Sakinleri">
-      <End Role="Site_Sakinleri" EntitySet="Site_Sakinleri" />
+    <AssociationSet Name="FK_Evler_Kiracilar" Association="Self.FK_Evler_Kiracilar">
+      <End Role="Kiracilar" EntitySet="Kiracilar" />
       <End Role="Evler" EntitySet="Evler" />
     </AssociationSet>
-    <AssociationSet Name="FK_Evler_Site_Sakinleri1" Association="Self.FK_Evler_Site_Sakinleri1">
+    <AssociationSet Name="FK_Evler_Site_Sakinleri" Association="Self.FK_Evler_Site_Sakinleri">
       <End Role="Site_Sakinleri" EntitySet="Site_Sakinleri" />
       <End Role="Evler" EntitySet="Evler" />
     </AssociationSet>

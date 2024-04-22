@@ -30,6 +30,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/sapli/Documents/Dersler/AriBilgi/Golpinar_Sitesi/WebSitesi/Views/Houses/Add.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG91c2VzXEFkZC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/sapli/Documents/Dersler/AriBilgi/Golpinar_Sitesi/WebSitesi/Views/Houses/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG91c2VzXERldGFpbHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
@@ -40,6 +44,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/sapli/Documents/Dersler/AriBilgi/Golpinar_Sitesi/WebSitesi/Views/Presidents/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJlc2lkZW50c1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/sapli/Documents/Dersler/AriBilgi/Golpinar_Sitesi/WebSitesi/Views/Residents/Add.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVzaWRlbnRzXEFkZC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/sapli/Documents/Dersler/AriBilgi/Golpinar_Sitesi/WebSitesi/Views/Residents/Index.cshtml]

@@ -58,5 +58,14 @@
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
+    <EntitySetMapping Name="Kiracilars">
+      <EntityTypeMapping TypeName="Golpinar_Sitesi_Model.Kiracilar">
+        <MappingFragment StoreEntitySet="Kiracilar">
+          <ScalarProperty Name="gsm" ColumnName="gsm" />
+          <ScalarProperty Name="ad_soyad" ColumnName="ad_soyad" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
   </EntityContainerMapping>
 </Mapping>

@@ -14,3 +14,5 @@ C:\Users\sapli\Documents\Dersler\AriBilgi\Golpinar_Sitesi\Admin_Yonetim_Form\obj
 C:\Users\sapli\Documents\Dersler\AriBilgi\Golpinar_Sitesi\Admin_Yonetim_Form\obj\Debug\Admin_Yonetim_Form.exe
 C:\Users\sapli\Documents\Dersler\AriBilgi\Golpinar_Sitesi\Admin_Yonetim_Form\obj\Debug\Admin_Yonetim_Form.pdb
 C:\Users\sapli\Documents\Dersler\AriBilgi\Golpinar_Sitesi\Admin_Yonetim_Form\obj\Debug\Admin_Yonetim_Form.Ana_Ekran.resources
+C:\Users\sapli\Documents\Dersler\AriBilgi\Golpinar_Sitesi\Admin_Yonetim_Form\obj\Debug\Admin_Yonetim_Form.EvEkleForm.resources
+C:\Users\sapli\Documents\Dersler\AriBilgi\Golpinar_Sitesi\Admin_Yonetim_Form\obj\Debug\Admin_Yonetim_Form.SiteSakiniEkle.resources

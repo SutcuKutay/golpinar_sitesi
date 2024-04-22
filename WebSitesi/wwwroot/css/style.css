@@ -46,6 +46,13 @@ body{
     margin:0 auto;
 	overflow-x:hidden;
 }
+a, a:hover, a:active, a:focus {
+    display: inline-block;
+    text-decoration: none;
+    color: green;
+    font-size: 16px;
+    padding: 0;
+}
 h1,h2,h3,h4,h5,h6 { 
 	margin: 0;
 	color:#43485c;
@@ -61,6 +68,14 @@ p {
 	font-family: 'Poppins', sans-serif;
 }
 img{border:none;max-width:100%; height:auto;}
+ul {
+    padding: 0;
+    margin: 0 auto;
+    list-style: none;
+}
+ul li {
+    list-style: none;
+}
 select,input,textarea,button{box-shadow:none;outline:0!important;}
 button {background: transparent;border: 0;}
 

@@ -1,0 +1,17 @@
+﻿@model WebSitesi.Models.Ekleme.EvEkleViewModel
+
+@* Test amaçlıdır. Projenin son halinde websitesinden ekleme işlemi yapılmıyor. *@
+
+<form method="post">
+	<div class="mt-3">
+		<input type="text" name="numara" asp-for="numara" />
+		<label for="numara">Ev Numarası</label>
+	</div>
+	<div class="mt-3">
+		<input type="number" name="fiyat" asp-for="fiyat" />
+		<label for="fiyat">Fiyatı</label>
+	</div>
+	<div class="mt-3">
+		<button type="submit" class="btn btn-primary">Kaydet</button>
+	</div>
+</form>

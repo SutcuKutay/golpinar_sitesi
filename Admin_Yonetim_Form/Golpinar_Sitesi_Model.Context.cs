@@ -31,5 +31,6 @@ namespace Admin_Yonetim_Form
         public virtual DbSet<Aidatlar> Aidatlars { get; set; }
         public virtual DbSet<Harcama_Detay> Harcama_Detay { get; set; }
         public virtual DbSet<Harcamalar> Harcamalars { get; set; }
+        public virtual DbSet<Kiracilar> Kiracilars { get; set; }
     }
 }

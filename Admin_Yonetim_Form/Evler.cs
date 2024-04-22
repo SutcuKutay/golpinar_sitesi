@@ -29,5 +29,6 @@ namespace Admin_Yonetim_Form
         public virtual ICollection<Aidatlar> Aidatlars { get; set; }
         public virtual Site_Sakinleri Site_Sakinleri { get; set; }
         public virtual Site_Sakinleri Site_Sakinleri1 { get; set; }
+        public virtual Kiracilar Kiracilar { get; set; }
     }
 }

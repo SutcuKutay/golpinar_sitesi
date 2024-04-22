@@ -16,7 +16,7 @@ namespace Admin_Yonetim_Form
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Ana_Ekran());
+            Application.Run(new Baslangic_Ekrani());
         }
     }
 }

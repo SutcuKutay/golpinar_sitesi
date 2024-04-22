@@ -1,4 +1,6 @@
-﻿namespace WebSitesi.Models
+﻿/*Veritabanı yoksa test amaçlı kullanılan veriler*/
+
+namespace WebSitesi.Models
 {
     public class ResidentsRepository
     {

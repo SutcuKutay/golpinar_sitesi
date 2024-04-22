@@ -35,6 +35,8 @@
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.btnEvEkle = new System.Windows.Forms.Button();
+            this.btnSakinEkle = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -116,11 +118,41 @@
             this.dataGridView1.TabIndex = 6;
             this.dataGridView1.Visible = false;
             // 
+            // btnEvEkle
+            // 
+            this.btnEvEkle.BackColor = System.Drawing.Color.Green;
+            this.btnEvEkle.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnEvEkle.ForeColor = System.Drawing.SystemColors.Control;
+            this.btnEvEkle.Location = new System.Drawing.Point(237, 32);
+            this.btnEvEkle.Name = "btnEvEkle";
+            this.btnEvEkle.Size = new System.Drawing.Size(119, 42);
+            this.btnEvEkle.TabIndex = 7;
+            this.btnEvEkle.Text = "Ev Ekle";
+            this.btnEvEkle.UseVisualStyleBackColor = false;
+            this.btnEvEkle.Visible = false;
+            this.btnEvEkle.Click += new System.EventHandler(this.btnEvEkle_Click);
+            // 
+            // btnSakinEkle
+            // 
+            this.btnSakinEkle.BackColor = System.Drawing.Color.Green;
+            this.btnSakinEkle.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnSakinEkle.ForeColor = System.Drawing.SystemColors.Control;
+            this.btnSakinEkle.Location = new System.Drawing.Point(709, 32);
+            this.btnSakinEkle.Name = "btnSakinEkle";
+            this.btnSakinEkle.Size = new System.Drawing.Size(120, 42);
+            this.btnSakinEkle.TabIndex = 8;
+            this.btnSakinEkle.Text = "Sakin Ekle";
+            this.btnSakinEkle.UseVisualStyleBackColor = false;
+            this.btnSakinEkle.Visible = false;
+            this.btnSakinEkle.Click += new System.EventHandler(this.button1_Click);
+            // 
             // Ana_Ekran
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1264, 681);
+            this.Controls.Add(this.btnSakinEkle);
+            this.Controls.Add(this.btnEvEkle);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.pictureBox3);
@@ -130,6 +162,7 @@
             this.Controls.Add(this.pictureBox1);
             this.Name = "Ana_Ekran";
             this.Text = "Gölpınar Sitesi - Ana Ekran";
+            this.Load += new System.EventHandler(this.Ana_Ekran_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -148,5 +181,7 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.Button btnEvEkle;
+        private System.Windows.Forms.Button btnSakinEkle;
     }
 }

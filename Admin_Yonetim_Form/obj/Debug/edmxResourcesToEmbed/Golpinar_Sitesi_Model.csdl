@@ -11,6 +11,7 @@
     <NavigationProperty Name="Aidatlars" Relationship="Golpinar_Sitesi_Model.FK_Aidatlar_Evler" FromRole="Evler" ToRole="Aidatlar" />
     <NavigationProperty Name="Site_Sakinleri" Relationship="Golpinar_Sitesi_Model.FK_Evler_Site_Sakinleri" FromRole="Evler" ToRole="Site_Sakinleri" />
     <NavigationProperty Name="Site_Sakinleri1" Relationship="Golpinar_Sitesi_Model.FK_Evler_Site_Sakinleri1" FromRole="Evler" ToRole="Site_Sakinleri" />
+    <NavigationProperty Name="Kiracilar" Relationship="Golpinar_Sitesi_Model.FK_Evler_Kiracilar" FromRole="Evler" ToRole="Kiracilar" />
   </EntityType>
   <EntityType Name="Kullanicilar">
     <Key>
@@ -51,6 +52,11 @@
     </AssociationSet>
     <AssociationSet Name="FK_Evler_Site_Sakinleri1" Association="Golpinar_Sitesi_Model.FK_Evler_Site_Sakinleri1">
       <End Role="Site_Sakinleri" EntitySet="Site_Sakinleri" />
+      <End Role="Evler" EntitySet="Evlers" />
+    </AssociationSet>
+    <EntitySet Name="Kiracilars" EntityType="Golpinar_Sitesi_Model.Kiracilar" />
+    <AssociationSet Name="FK_Evler_Kiracilar" Association="Golpinar_Sitesi_Model.FK_Evler_Kiracilar">
+      <End Role="Kiracilar" EntitySet="Kiracilars" />
       <End Role="Evler" EntitySet="Evlers" />
     </AssociationSet>
   </EntityContainer>
@@ -124,6 +130,27 @@
     <End Type="Golpinar_Sitesi_Model.Evler" Role="Evler" Multiplicity="*" />
     <ReferentialConstraint>
       <Principal Role="Site_Sakinleri">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Evler">
+        <PropertyRef Name="kiracı" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="Kiracilar">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ad_soyad" Type="String" Nullable="false" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Name="gsm" Type="String" Nullable="false" MaxLength="11" FixedLength="true" Unicode="true" />
+    <NavigationProperty Name="Evlers" Relationship="Golpinar_Sitesi_Model.FK_Evler_Kiracilar" FromRole="Kiracilar" ToRole="Evler" />
+  </EntityType>
+  <Association Name="FK_Evler_Kiracilar">
+    <End Type="Golpinar_Sitesi_Model.Kiracilar" Role="Kiracilar" Multiplicity="0..1" />
+    <End Type="Golpinar_Sitesi_Model.Evler" Role="Evler" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Kiracilar">
         <PropertyRef Name="id" />
       </Principal>
       <Dependent Role="Evler">
