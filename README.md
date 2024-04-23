@@ -4,6 +4,9 @@ Admin Yönetim Form uygulamasının giriş bilgileri,
 kullanıcı adı: admin 
 şifre: admin
 
+## Proje Amacı
+Site sahibi form uygulamasını kullanarak ev, ev sahibi, kiracı ve aidat kaydı yapabilecek. Elektronik aidat defteri gibi düşünebiliriz. Site sakinleri de web sayfası üzerinden sitedeki evlerin, ev sahiplerinini ve kiracıların listesini görebilecek. Siteyle ilgili resimlere bakabilecek. Siteye gelecek kiracılar için de iyi bir ön izlenim oluşturmak. Sitenin tanıtımı.
+
 ## Ekran Görüntüleri
 ![golpinar-1](https://github.com/SutcuKutay/golpinar_sitesi/assets/94748829/f23a2189-3a8b-45e2-a6b0-bb2e4238e7d3)
 
