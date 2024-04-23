@@ -1,5 +1,8 @@
 # Gölpınar Sitesi
 Sapanca Gölpınar Sitesi'nin aidat takip Windows Forms uygulaması ve resmi web sitesi.
+Admin Yönetim Form uygulamasının giriş bilgileri, 
+kullanıcı adı: admin 
+şifre: admin
 
 ## Ekran Görüntüleri
 ![golpinar-1](https://github.com/SutcuKutay/golpinar_sitesi/assets/94748829/f23a2189-3a8b-45e2-a6b0-bb2e4238e7d3)
